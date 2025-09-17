@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejs_Website</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      button{
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+    <h1>URL_SHORTNER</h1>
+    <% if (locals.id) { %>
+     <p>URL Gernerated: http://localhost:8001/<%= id %></p>
+    <% } %>
+    <form action="/url" method="POST">
+        <label for="">Submit your URL</label>
+        <input type="text" placeholder="https://example.com" name="url">
+      <div>
+        <button type="submit">Generate your shortURL</button>
+      </div>
+    </form>
+    
+</body>
+</html>
