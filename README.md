@@ -1,3 +1,5 @@
+# Short_URL_App
+
 A simple URL shortener built with Node.js, Express, MongoDB, and EJS.  
 Users can register, log in, shorten long URLs, and track analytics (clicks, visit history).
 ## Features
